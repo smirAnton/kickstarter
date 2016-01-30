@@ -24,6 +24,7 @@
 	<import resource="applicationContext-db.xml" />
 	
   	<context:component-scan base-package="ua.com.goit.gojava7.kickstarter.controller" />	
+  	<context:component-scan base-package="ua.com.goit.gojava7.kickstarter.rest" />	
   	
 	<mvc:annotation-driven />
   	<mvc:resources mapping="/resources/**" location="/resources/" />

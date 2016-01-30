@@ -5,10 +5,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "quote")
+@NamedQueries({ @NamedQuery(name = "Quote.count", query = "SELECT COUNT(q) FROM Quote q"),
+				@NamedQuery(name = "Quote.findAll", query = "SELECT q from Quote q") })
 public class Quote {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -45,7 +49,7 @@ public class Quote {
 
 	@Override
 	public String toString() {
-		return "Quote : [text=" + text + ", author=" + author + "]";
+		return String.format("Quote : [text=%s, author=%s, ", text, author);
 	}
 
 	@Override
