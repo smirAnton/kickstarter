@@ -13,7 +13,6 @@
                     <hr>
                 </div>
                 <div class="col-md-8">
-                    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
                     <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ua/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.401699,30.252512,10z/data=!3m1!4b1!4m2!3m1!1s0x40d4cf4ee15a4505:0x764931d2170146fe"></iframe>
                 </div>
                 <div class="col-md-4">
@@ -41,7 +40,6 @@
                     </h2>
                     <hr>
                     <p>Please contact me in any convenient to you time.</p>
-<<<<<<< HEAD
                     <form method="post" action="./email">
                         <div class="row">
                             <div class="form-group col-lg-4">
@@ -55,30 +53,11 @@
                             <div class="form-group col-lg-4">
                                 <label>Phone Number</label>
                                 <input type="tel" class="form-control" name="phoneNumber">
-=======
-                    <form>
-                        <div class="row">
-                            <div class="form-group col-lg-4">
-                                <label>Name</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control">
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control">
->>>>>>> 93e123168f30ef6ca9ab3b7acf3d22577b04031e
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
                                 <label>Message</label>
-<<<<<<< HEAD
                                 <textarea class="form-control" rows="6" name="messageText"></textarea>
-=======
-                                <textarea class="form-control" rows="6"></textarea>
->>>>>>> 93e123168f30ef6ca9ab3b7acf3d22577b04031e
                             </div>
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">

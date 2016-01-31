@@ -18,9 +18,4 @@ public class QuoteService {
 	public String getMovie() {
 		return quoteDao.getRandomQuote().toString();
 	}
-<<<<<<< HEAD
-=======
-	
-
->>>>>>> 93e123168f30ef6ca9ab3b7acf3d22577b04031e
 }
