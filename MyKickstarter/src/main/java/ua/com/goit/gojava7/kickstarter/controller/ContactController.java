@@ -5,12 +5,18 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+<<<<<<< HEAD
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+=======
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+>>>>>>> 93e123168f30ef6ca9ab3b7acf3d22577b04031e
 import org.springframework.web.servlet.ModelAndView;
 
 import ua.com.goit.gojava7.kickstarter.beans.Category;
@@ -21,10 +27,15 @@ import ua.com.goit.gojava7.kickstarter.database.contract.CategoryDao;
 public class ContactController {
 	private static final Logger log = LoggerFactory.getLogger(ContactController.class);
 	@Autowired
+<<<<<<< HEAD
 	private JavaMailSender mailSender;
 	@Autowired
 	private CategoryDao categoryDao;
 	
+=======
+	private CategoryDao categoryDao;
+
+>>>>>>> 93e123168f30ef6ca9ab3b7acf3d22577b04031e
 	@RequestMapping(value = "/contacts", method = RequestMethod.GET)
 	public ModelAndView showContacts() {
 		ModelAndView modelAndView = new ModelAndView("contacts");
@@ -35,6 +46,7 @@ public class ContactController {
 		modelAndView.addObject("categories", categories);
 		return modelAndView;
 	}
+<<<<<<< HEAD
 	
 	@RequestMapping(value = "/email", method = RequestMethod.POST)
 	public String addPayment(@RequestParam(name = "name") String name,
@@ -55,5 +67,7 @@ public class ContactController {
 	}
 
 	
+=======
+>>>>>>> 93e123168f30ef6ca9ab3b7acf3d22577b04031e
 
 }

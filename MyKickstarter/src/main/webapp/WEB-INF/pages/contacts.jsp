@@ -41,6 +41,7 @@
                     </h2>
                     <hr>
                     <p>Please contact me in any convenient to you time.</p>
+<<<<<<< HEAD
                     <form method="post" action="./email">
                         <div class="row">
                             <div class="form-group col-lg-4">
@@ -54,11 +55,30 @@
                             <div class="form-group col-lg-4">
                                 <label>Phone Number</label>
                                 <input type="tel" class="form-control" name="phoneNumber">
+=======
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label>Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control">
+>>>>>>> 93e123168f30ef6ca9ab3b7acf3d22577b04031e
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
                                 <label>Message</label>
+<<<<<<< HEAD
                                 <textarea class="form-control" rows="6" name="messageText"></textarea>
+=======
+                                <textarea class="form-control" rows="6"></textarea>
+>>>>>>> 93e123168f30ef6ca9ab3b7acf3d22577b04031e
                             </div>
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">

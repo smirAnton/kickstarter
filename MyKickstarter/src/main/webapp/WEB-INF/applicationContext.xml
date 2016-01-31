@@ -36,6 +36,7 @@
 		<property name="prefix" value="/WEB-INF/pages/" />
 		<property name="suffix" value=".jsp" />
 	</bean>	
+<<<<<<< HEAD
 	
 	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
 	    <property name="host" value="smtp.gmail.com" />
@@ -50,4 +51,6 @@
 	        </props>
 	    </property>
 	</bean>
+=======
+>>>>>>> 93e123168f30ef6ca9ab3b7acf3d22577b04031e
 </beans>
