@@ -19,10 +19,7 @@ public class LoggerAspect {
 		long start = System.currentTimeMillis();
 		Object output = jointPoint.proceed();
 		long elapsedTime = System.currentTimeMillis() - start;
-
-		log.info("{} : {}", "Method name", jointPoint.getSignature());
-		log.info("{} : {} {}", "Method execution time", elapsedTime, "milliseconds.");
-
+		log.info("{}={}, {}={}", "Method name", jointPoint.getSignature(), "Method execution time", elapsedTime);
 		return output;
 	}
 

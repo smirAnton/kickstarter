@@ -70,21 +70,10 @@
         </div>
 
     </div>
-    <!-- /.container -->
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2016</p>
-                </div>
-            </div>
-        </div>
+	    <script src="<c:url value="/resources/js/jquery.js" />"></script>
+	    <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
     </footer>
-
-    <!-- jQuery -->
-    <script src="<c:url value="/resources/js/jquery.js" />"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
-
+    
 <jsp:include page="footer.jsp"></jsp:include>
