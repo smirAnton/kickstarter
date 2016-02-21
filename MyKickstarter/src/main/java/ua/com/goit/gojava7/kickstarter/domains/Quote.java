@@ -1,4 +1,4 @@
-package ua.com.goit.gojava7.kickstarter.beans;
+package ua.com.goit.gojava7.kickstarter.domains;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,7 +12,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "quote")
 @NamedQueries({ @NamedQuery(name = "Quote.count", query = "SELECT COUNT(q) FROM Quote q"),
-				@NamedQuery(name = "Quote.findAll", query = "SELECT q from Quote q") })
+		@NamedQuery(name = "Quote.findAll", query = "SELECT q from Quote q") })
 public class Quote {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

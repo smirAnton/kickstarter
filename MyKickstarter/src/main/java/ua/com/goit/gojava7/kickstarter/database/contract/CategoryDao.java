@@ -2,7 +2,7 @@ package ua.com.goit.gojava7.kickstarter.database.contract;
 
 import java.util.List;
 
-import ua.com.goit.gojava7.kickstarter.beans.Category;
+import ua.com.goit.gojava7.kickstarter.domains.Category;
 
 public interface CategoryDao {
 

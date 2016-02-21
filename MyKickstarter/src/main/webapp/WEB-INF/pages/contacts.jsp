@@ -13,7 +13,7 @@
                     <hr>
                 </div>
                 <div class="col-md-8">
-                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.ua/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.401699,30.252512,10z/data=!3m1!4b1!4m2!3m1!1s0x40d4cf4ee15a4505:0x764931d2170146fe"></iframe>
+                	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.7200715579997!2d30.6269914152635!3d50.40905429822854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5a85c54c947%3A0xa75106f5dc7abcff!2z0LLRg9C7LiDQkNC90L3QuCDQkNGF0LzQsNGC0L7QstC-0ZcsINCa0LjRl9CyLCDQo9C60YDQsNC40L3QsA!5e0!3m2!1sru!2sru!4v1455219683650" width="700" height="400" style="border:0" ></iframe>
                 </div>
                 <div class="col-md-4">
                     <p>Phone:

@@ -1,10 +1,10 @@
-package ua.com.goit.gojava7.kickstarter.service;
+package ua.com.goit.gojava7.kickstarter.service.validation;
 
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
-import ua.com.goit.gojava7.kickstarter.beans.Faq;
+import ua.com.goit.gojava7.kickstarter.domains.Faq;
 
 public class FaqValidator implements Validator {
 

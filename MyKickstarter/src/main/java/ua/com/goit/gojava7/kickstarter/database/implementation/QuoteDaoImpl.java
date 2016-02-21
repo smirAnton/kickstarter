@@ -6,8 +6,8 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
-import ua.com.goit.gojava7.kickstarter.beans.Quote;
 import ua.com.goit.gojava7.kickstarter.database.contract.QuoteDao;
+import ua.com.goit.gojava7.kickstarter.domains.Quote;
 
 @Repository
 public class QuoteDaoImpl implements QuoteDao {

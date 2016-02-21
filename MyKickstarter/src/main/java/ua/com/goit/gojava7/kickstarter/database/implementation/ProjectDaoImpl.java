@@ -8,8 +8,8 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
-import ua.com.goit.gojava7.kickstarter.beans.Project;
 import ua.com.goit.gojava7.kickstarter.database.contract.ProjectDao;
+import ua.com.goit.gojava7.kickstarter.domains.Project;
 
 @Repository
 public class ProjectDaoImpl implements ProjectDao {

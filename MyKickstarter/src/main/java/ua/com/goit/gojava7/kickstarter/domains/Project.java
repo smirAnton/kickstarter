@@ -1,4 +1,4 @@
-package ua.com.goit.gojava7.kickstarter.beans;
+package ua.com.goit.gojava7.kickstarter.domains;
 
 import java.util.List;
 import java.util.Set;
@@ -172,8 +172,8 @@ public class Project {
 	@Override
 	public int hashCode() {
 		int quoteHashCode = 0;
-		quoteHashCode = (id + name + shortDescription + requiredSum + fullDescription + linkOnVideo + collectedSum + daysLeft)
-				.hashCode();
+		quoteHashCode = (id + name + shortDescription + requiredSum + fullDescription + linkOnVideo + collectedSum
+				+ daysLeft).hashCode();
 		return quoteHashCode;
 	}
 }

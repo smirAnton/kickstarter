@@ -8,8 +8,8 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
-import ua.com.goit.gojava7.kickstarter.beans.Reward;
 import ua.com.goit.gojava7.kickstarter.database.contract.RewardDao;
+import ua.com.goit.gojava7.kickstarter.domains.Reward;
 
 @Repository
 public class RewardDaoImpl implements RewardDao {

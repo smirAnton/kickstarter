@@ -1,6 +1,6 @@
 package ua.com.goit.gojava7.kickstarter.database.contract;
 
-import ua.com.goit.gojava7.kickstarter.beans.Quote;
+import ua.com.goit.gojava7.kickstarter.domains.Quote;
 
 public interface QuoteDao {
 

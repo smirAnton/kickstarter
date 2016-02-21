@@ -1,10 +1,10 @@
-package ua.com.goit.gojava7.kickstarter.service;
+package ua.com.goit.gojava7.kickstarter.service.validation;
 
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
-import ua.com.goit.gojava7.kickstarter.beans.Payment;
+import ua.com.goit.gojava7.kickstarter.domains.Payment;
 
 public class PaymentValidator implements Validator {
 
@@ -25,7 +25,5 @@ public class PaymentValidator implements Validator {
 		if (payment.getPledge() < 0) {
 			errors.reject("pledge", "invalid pledge");
 		}
-		
 	}
-
 }

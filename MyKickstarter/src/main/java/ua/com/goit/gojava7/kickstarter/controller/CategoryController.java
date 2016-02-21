@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import ua.com.goit.gojava7.kickstarter.beans.Category;
-import ua.com.goit.gojava7.kickstarter.beans.Project;
-import ua.com.goit.gojava7.kickstarter.beans.Quote;
 import ua.com.goit.gojava7.kickstarter.database.contract.CategoryDao;
 import ua.com.goit.gojava7.kickstarter.database.contract.PaymentDao;
 import ua.com.goit.gojava7.kickstarter.database.contract.ProjectDao;
 import ua.com.goit.gojava7.kickstarter.database.contract.QuoteDao;
+import ua.com.goit.gojava7.kickstarter.domains.Category;
+import ua.com.goit.gojava7.kickstarter.domains.Project;
+import ua.com.goit.gojava7.kickstarter.domains.Quote;
 
 
 @Controller

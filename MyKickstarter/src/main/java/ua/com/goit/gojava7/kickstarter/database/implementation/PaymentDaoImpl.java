@@ -6,8 +6,8 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
-import ua.com.goit.gojava7.kickstarter.beans.Payment;
 import ua.com.goit.gojava7.kickstarter.database.contract.PaymentDao;
+import ua.com.goit.gojava7.kickstarter.domains.Payment;
 
 @Repository
 public class PaymentDaoImpl implements PaymentDao {

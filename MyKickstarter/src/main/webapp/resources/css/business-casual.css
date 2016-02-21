@@ -185,3 +185,7 @@ footer p {
         clear: both;
     }
 }
+
+iframe {
+    border:none;
+}

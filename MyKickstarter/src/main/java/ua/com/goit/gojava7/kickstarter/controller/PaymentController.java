@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import ua.com.goit.gojava7.kickstarter.beans.Payment;
-import ua.com.goit.gojava7.kickstarter.beans.Project;
 import ua.com.goit.gojava7.kickstarter.database.contract.PaymentDao;
 import ua.com.goit.gojava7.kickstarter.database.contract.ProjectDao;
+import ua.com.goit.gojava7.kickstarter.domains.Payment;
+import ua.com.goit.gojava7.kickstarter.domains.Project;
 
 
 @Controller

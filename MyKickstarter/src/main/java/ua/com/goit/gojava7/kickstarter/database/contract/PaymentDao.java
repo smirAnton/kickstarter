@@ -1,6 +1,6 @@
 package ua.com.goit.gojava7.kickstarter.database.contract;
 
-import ua.com.goit.gojava7.kickstarter.beans.Payment;
+import ua.com.goit.gojava7.kickstarter.domains.Payment;
 
 public interface PaymentDao {
 

@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import ua.com.goit.gojava7.kickstarter.beans.Category;
 import ua.com.goit.gojava7.kickstarter.database.contract.CategoryDao;
-
+import ua.com.goit.gojava7.kickstarter.domains.Category;
 
 @Controller
 public class ContactController {
 	private static final Logger log = LoggerFactory.getLogger(ContactController.class);
+	private static final String EMAIL = "smiranton2013@gmail.com";
 	@Autowired
 	private JavaMailSender mailSender;
 	@Autowired
@@ -35,21 +35,27 @@ public class ContactController {
 		modelAndView.addObject("categories", categories);
 		return modelAndView;
 	}
-	
+
 	@RequestMapping(value = "/email", method = RequestMethod.POST)
 	public String addPayment(@RequestParam(name = "name") String name,
-							 @RequestParam(name = "emailAddress") String emailAddress, 
-							 @RequestParam(name = "phoneNumber") String phoneNumber,
-							 @RequestParam(name = "messageText") String messageText) {
-		
-		log.info("Username: {}, email: {}, phoneNumber: {}, messageText: {}", name, emailAddress, phoneNumber, messageText);
+			@RequestParam(name = "emailAddress") String emailAddress,
+			@RequestParam(name = "phoneNumber") String phoneNumber,
+			@RequestParam(name = "messageText") String messageText) {
+
+		log.info("Username: {}, email: {}, phoneNumber: {}, messageText: {}", name, emailAddress, phoneNumber,
+				messageText);
+
 		SimpleMailMessage email = new SimpleMailMessage();
-		email.setFrom("smiranton2013@gmail.com");
-		email.setTo(emailAddress);
-        email.setText("name: " + name + ", emailadress: " + emailAddress + ", phone: " + phoneNumber + ", message: " + messageText);
-        
-        mailSender.send(email);
-        log.info("email has sent");
+		email.setFrom(EMAIL);
+		email.setTo(EMAIL);
+		email.setText(new StringBuilder()
+				.append("name: ").append(name).append("\n")
+				.append("emailadress: ").append(emailAddress).append("\n")
+				.append("phone: ").append(phoneNumber).append("\n")
+				.append("message: ").append(messageText).toString());
+
+		mailSender.send(email);
+		log.info("email has sent");
 
 		return "redirect:./contacts";
 	}

@@ -8,8 +8,8 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
-import ua.com.goit.gojava7.kickstarter.beans.Category;
 import ua.com.goit.gojava7.kickstarter.database.contract.CategoryDao;
+import ua.com.goit.gojava7.kickstarter.domains.Category;
 
 @Repository
 public class CategoryDaoImpl implements CategoryDao {

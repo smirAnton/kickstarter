@@ -8,8 +8,8 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
-import ua.com.goit.gojava7.kickstarter.beans.Faq;
 import ua.com.goit.gojava7.kickstarter.database.contract.FaqDao;
+import ua.com.goit.gojava7.kickstarter.domains.Faq;
 
 @Repository
 public class FaqDaoImpl implements FaqDao {
